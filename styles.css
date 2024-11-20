@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 :root{
     --Red: hsl(0, 78%, 62%);
     --Cyan: hsl(180, 62%, 55%);
@@ -21,14 +20,12 @@ body{
     margin: 0;
     width: 100%;
     overflow-x: hidden;
+    font-weight: 300;
     color: var(--Very-Dark-Blue);
     background-color: var(--Very-Light-Gray);
-    /* background-color: blue; */
-
 }
 .main{
     padding: 50px 20px;
-    /* background-color: aqua; */
     min-width: 300px;
     box-sizing: border-box;
     display: flex;
@@ -36,7 +33,6 @@ body{
     align-items: center;
 }
 .header{
-    /* background-color: bisque; */
     text-align: center;
     font-size: 13px;
 }
@@ -49,20 +45,17 @@ body{
 .header p{
     font-size: 16px;
     width: 320px;
-    /* background-color: blueviolet; */
 }
 .grid-section{
     display: grid;
     margin: 50px;
     padding: 0 20px;
-    min-width: 240px;
-    /* background-color: red; */
+    max-width: 440px;
 }
 .item{
-    /* background-color: rgba(0, 0, 0, 0.178); */
     background-color: #fff;
     border-radius: 6px;
-    min-width: 200px;
+    max-width: 400px;
     height: auto;
     margin: 30px 0;
     padding: 30px 20px;
@@ -77,12 +70,10 @@ body{
 }
 .item p{
     margin: 0 0 0 10px;
-
 }
 .header-thin{
     font-weight: 200;
 }
-
 .item img{
     align-self: flex-end;
     margin: 40px 0 0 0 ;
@@ -101,7 +92,7 @@ body{
 }
 
 /* Media query for screens larger than 950px */
-@media (min-width: 726px) {
+@media (min-width: 1000px) {
     .main{
         min-width: 100%;
     }
@@ -111,10 +102,6 @@ body{
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         place-items: center;
-
-    }
-    .item{
-        max-width: 369px;
     }
     .header {
         font-size: 20px;
@@ -124,7 +111,6 @@ body{
         font-weight: 500;
     }
     .header p{
-        /* background-color: rgb(0, 221, 221); */
         width: 550px;
     }
 }
