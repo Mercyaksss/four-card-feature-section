@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+
+    --Font-size: 15px;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+    color: var(--Very-Dark-Blue);
+    background-color: var(--Very-Light-Gray);
+    /* background-color: blue; */
+
+}
+.main{
+    padding: 50px 20px;
+    /* background-color: aqua; */
+    min-width: 300px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    /* background-color: bisque; */
+    text-align: center;
+    font-size: 13px;
+}
+.header h1{
+    margin: 0;
+}
+.header-thin{
+ font-weight: 300;
+}
+.header p{
+    font-size: 16px;
+    width: 320px;
+    /* background-color: blueviolet; */
+}
+.grid-section{
+    display: grid;
+    margin: 50px;
+    padding: 0 20px;
+    min-width: 240px;
+    /* background-color: red; */
+}
+.item{
+    /* background-color: rgba(0, 0, 0, 0.178); */
+    background-color: #fff;
+    border-radius: 6px;
+    min-width: 200px;
+    height: auto;
+    margin: 30px 0;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+.item h3{
+    font-size: 25px;
+    margin: 10px;
+    font-weight: 600;
+}
+.item p{
+    margin: 0 0 0 10px;
+
+}
+.header-thin{
+    font-weight: 200;
+}
+
+.item img{
+    align-self: flex-end;
+    margin: 40px 0 0 0 ;
+}
+.item-1{
+    border-top: 4px solid var(--Cyan) ;
+}
+.item-2{
+    border-top: 4px solid var(--Red) ;
+}
+.item-3{ 
+    border-top: 4px solid var(--Orange) ;
+}
+.item-4{
+    border-top: 4px solid var(--Blue) ;
+}
+
+/* Media query for screens larger than 950px */
+@media (min-width: 726px) {
+    .main{
+        min-width: 100%;
+    }
+    .grid-section{
+        max-width: 2000px;
+        margin: auto;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        place-items: center;
+
+    }
+    .item{
+        max-width: 369px;
+    }
+    .header {
+        font-size: 20px;
+        align-items: center;
+    }
+    .header-bold{
+        font-weight: 500;
+    }
+    .header p{
+        /* background-color: rgb(0, 221, 221); */
+        width: 550px;
+    }
+}
