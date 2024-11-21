@@ -48,7 +48,6 @@ body{
 }
 .grid-section{
     display: grid;
-    margin: 50px;
     padding: 0 20px;
     max-width: 440px;
 }
